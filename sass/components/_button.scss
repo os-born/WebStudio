@@ -1,0 +1,121 @@
+// Стили кнопок проекта
+
+// Стили кнопки героя - Заказать услугу
+
+.button__hero {
+  display: block;
+  @extend %button;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 31px;
+}
+
+// Стили кнопки подписаться в футере
+
+.button__subscribe {
+  display: inline-flex;
+  @extend %button;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: $primary-white-color;
+}
+
+// Стили фильтров страницы портфолио
+
+.portfolio__button {
+  transition: background-color $animation-var, color $animation-var;
+  padding: 6px 22px;
+  text-align: center;
+  font: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: $title-text-color;
+  background-color: $team-background-color;
+
+  &:hover,
+  &:focus {
+    background: $accent-color;
+    color: $primary-white-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.portfolio__button-list {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio__button-item {
+  margin-right: 8px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+// Стили кнопки Close и SUbmit модального окна
+
+.button-close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 8px;
+  padding: auto;
+  margin: 0;
+  transition: color $animation-var;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: $primary-white-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: currentColor;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.btn-submit {
+  display: block;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: $accent-color;
+
+  &__text {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+  }
+}

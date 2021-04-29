@@ -1,0 +1,10 @@
+// Стили Хедера
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header_conteiner {
+  @extend %conteiner;
+  @extend %flex-centered;
+}

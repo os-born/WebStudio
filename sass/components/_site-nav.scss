@@ -1,0 +1,48 @@
+// Стили навигации сайта
+
+.nav {
+  @extend %flex-centered;
+
+  &__list {
+    @extend %list-nomarked;
+    @extend %flex-centered;
+  }
+
+  &__item {
+    margin-right: 50px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__link {
+    @extend %link-nolined;
+    @extend %hovered-focused;
+    display: flex;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $title-text-color;
+  }
+
+  &__link--current {
+    position: relative;
+  }
+
+  &__link--current::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+}

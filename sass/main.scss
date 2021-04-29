@@ -1,0 +1,32 @@
+// Главный файл стилей
+
+// Шрифты
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+// Утилиты
+
+@import './utils/_veriables';
+@import './utils/placeholders';
+
+// Базовые стили
+
+@import './components/general';
+
+// Компоненты
+
+@import './components/header';
+@import './components/logo';
+@import './components/site-nav';
+@import './components/header-contacts';
+@import './components/hero-section';
+@import './components/features';
+@import './components/production';
+@import './components/team';
+@import './components/social-links';
+@import './components/partners';
+@import './components/button';
+@import './components/portfolio-page';
+@import './components/cards';
+@import './components/footer';
+@import './components/modal';
