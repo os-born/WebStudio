@@ -3,6 +3,10 @@
 .nav {
   @extend %flex-centered;
 
+  @media screen and (max-width: $mobile) {
+    justify-content: space-between;
+  }
+
   &__list {
     @extend %list-nomarked;
     @extend %flex-centered;
@@ -44,5 +48,13 @@
     bottom: -3px;
     border-radius: 2px;
     background-color: $accent-color;
+  }
+}
+
+.m-nav__icon {
+  &:hover,
+  &:focus {
+    transition: fill $animation-var;
+    fill: $accent-color;
   }
 }

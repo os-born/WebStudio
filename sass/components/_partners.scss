@@ -21,23 +21,29 @@
   .partners__list {
     @extend %flex-centered;
     @extend %list-nomarked;
+    flex-wrap: wrap;
   }
 }
 .partners__item {
   margin-right: 30px;
-  &:last-child {
+  margin-bottom: 30px;
+  width: (calc#{50%-6.25%});
+  &:nth-child(2n) {
     margin-right: 0;
+  }
+  &:nth-child(n + 5) {
+    margin-bottom: 0;
   }
 }
 
 .partner {
-  max-width: 170px;
-  height: 90px;
+  max-width: 210px;
+  height: 92px;
 
   &__link {
+    width: 210px;
+    height: 92px;
     display: flex;
-    width: 170px;
-    height: 90px;
     justify-content: center;
     align-items: center;
     transition: color $animation-var, border $animation-var, fill $animation-var;

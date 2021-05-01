@@ -1,15 +1,19 @@
 // Плейсхолдеры
 
 %section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 %conteiner {
-  width: 1200px;
+  width: 480px;
   padding: 0 15px 0 15px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
 }
 
 %flex-centered {

@@ -7,4 +7,5 @@
 .header_conteiner {
   @extend %conteiner;
   @extend %flex-centered;
+  justify-content: space-between;
 }

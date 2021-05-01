@@ -8,6 +8,7 @@
   position: relative;
   display: block;
   overflow: hidden;
+
   &:hover {
     &::before {
       transform: translateY(0);
@@ -17,11 +18,8 @@
     .card--hover-overlay {
       transform: translateY(0);
     }
-
-    // .card-thumb:hover.card-thumb::before {
-    //   transform: translateY(0);
-    // }
   }
+
   &::before {
     position: absolute;
     content: '';
@@ -30,7 +28,7 @@
     height: 100%;
     left: 0;
     bottom: 0;
-    transform: translateY (calc#{100%});
+    transform: translateY(calc(100%));
     transition: transform $animation-var;
     background-color: rgba(33, 150, 243, 0.9);
   }
@@ -43,7 +41,7 @@
   height: 294px;
   left: 0;
   bottom: 0;
-  transform: translateY (calc#{100%});
+  transform: translateY(calc(100%));
   transition: transform $animation-var;
   text-align: left;
   padding: 63px 24px;
