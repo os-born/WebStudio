@@ -837,6 +837,7 @@ ul {
 
 .card__border {
   padding: 20px 24px;
+  width: 100%;
   text-align: left;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
