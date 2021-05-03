@@ -10,17 +10,21 @@
 
 .portfolio__button-list {
   @extend %flex-centered;
+  flex-wrap: wrap;
+  justify-content: start;
   @extend %list-nomarked;
 }
 
 .portfolio__card-list {
   display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  // flex-wrap: wrap;
   @extend %list-nomarked;
-  flex-wrap: wrap;
 }
 
 .portfolio__card-item {
-  margin-left: 30px;
+  // margin-left: 30px;
   margin-bottom: 30px;
   transition: box-shadow $animation-var;
   &:hover,
@@ -29,13 +33,17 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  &:nth-child(3n + 1) {
-    margin-left: 0;
-  }
-
-  &:nth-last-child(-n + 3) {
+  &:last-child {
     margin-bottom: 0;
   }
+
+  // &:nth-child(3n + 1) {
+  //   margin-left: 0;
+  // }
+
+  // &:nth-last-child(-n + 3) {
+  //   margin-bottom: 0;
+  // }
 }
 
 .portfolio__card-link {

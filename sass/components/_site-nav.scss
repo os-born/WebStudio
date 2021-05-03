@@ -50,11 +50,3 @@
     background-color: $accent-color;
   }
 }
-
-.m-nav__icon {
-  &:hover,
-  &:focus {
-    transition: fill $animation-var;
-    fill: $accent-color;
-  }
-}

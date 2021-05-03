@@ -66,3 +66,41 @@
     // padding-top: 12px;
   }
 }
+
+// Стили социальных сетей модального окга навигации для Mobile
+
+.m-socials {
+  &__list {
+    @extend %flex-centered;
+    @extend %list-nomarked;
+    justify-content: space-between;
+  }
+
+  &__link {
+    @extend %link-nolined;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22px;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+}
+
+.m-socials__item {
+  position: relative;
+}
+
+.m-socials__item::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 22px;
+  right: -12px;
+  top: -3px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.m-socials__item:last-of-type:after {
+  display: none;
+}

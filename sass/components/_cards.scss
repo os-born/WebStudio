@@ -8,6 +8,7 @@
   position: relative;
   display: block;
   overflow: hidden;
+  justify-content: stretch;
 
   &:hover {
     &::before {

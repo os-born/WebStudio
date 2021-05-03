@@ -62,3 +62,7 @@
     background-color: $accent-color;
   }
 }
+
+%self-grow {
+  align-self: stretch;
+}

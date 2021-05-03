@@ -1,0 +1,122 @@
+// Стили модального окна Mobile
+
+.m-backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: $primary-white-color;
+}
+
+.m-backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.m-backdrop {
+  .is-hidden {
+    .modal {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+}
+
+.m-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 100%;
+  height: 100%;
+  transition: transform $animation-var;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: $primary-white-color;
+}
+
+.m-nav {
+  width: 480px;
+  height: 100%;
+  padding: 48px 83px 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__list {
+    @extend %list-nomarked;
+  }
+
+  &__item {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    @extend %link-nolined;
+    @extend %hovered-focused;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    border: none;
+    color: $title-text-color;
+    background-color: $primary-white-color;
+
+    &--current {
+      color: $accent-color;
+    }
+  }
+}
+
+.m-contacts__list {
+  @extend %list-nomarked;
+}
+
+.m-contacts {
+  margin-bottom: 64px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+
+  &__link {
+    display: inline-block;
+    // @extend %hovered-focused;
+    @extend %link-nolined;
+    cursor: pointer;
+    color: $primary-text-color;
+  }
+
+  &__mail {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+
+  &__tel {
+    display: block;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+}
+
+.m-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}

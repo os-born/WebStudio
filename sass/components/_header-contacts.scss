@@ -6,7 +6,7 @@
 
 .contacts__list {
   @extend %list-nomarked;
-  @extend %flex-centered;
+  // @extend %flex-centered;
 }
 
 .contacts {

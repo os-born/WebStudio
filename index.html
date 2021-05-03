@@ -20,13 +20,77 @@
                     <span class="logo--black-part">Studio</span>
                 </a>
             </div>
-            <div class="m-nav">
-                <a href="./mobile_nav.html" class="m-nav__link">
-                    <svg class="m-nav__icon" width="40px" height="40px">
+            <div class="m-nav-menu">
+                <button mobile-modal-open type="button" class="m-button">
+                    <svg class="m-button__icon" width="40px" height="40px">
                         <use href="./images/icons.svg#mobile-menu"></use>
                     </svg>
-                </a>
+                </button>
             </div>
+        </div>
+
+        <!-- Модальное окно mobile контактов -->
+
+        <div mobile-modal class="m-backdrop is-hidden">
+            <nav class="m-nav">
+                <button mobile-modal-close type="button" class="m-button-close">
+                    <svg class="m-button-close__logo" width="18px" height="18px">
+                        <use href="./images/icons.svg#modal-close-button"></use>
+                    </svg>
+                </button>
+                <ul class="m-nav__list">
+                    <li class="m-nav__item"><a href="./index.html" class="m-nav__link m-nav__link--current">Студия</a>
+                    </li>
+                    <li class="m-nav__item"><a href="./portfolio.html" class="m-nav__link">Портфолио</a>
+                    </li>
+                    <li class="m-nav__item"><a href="#" class="m-nav__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="m-contacts-wrapper">
+                    <div class="m-contacts">
+                        <ul class="m-contacts__list">
+                            <li class="m-contacts__item">
+                                <a href="mailto:info@devstudio.com" class="m-contacts__link">
+                                    <span class="m-contacts__tel">
+                                        +38 096 111 11 11
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="m-contacts__item">
+                                <a href="tel:380961111111" class="m-contacts__link">
+                                    <span class="m-contacts__mail">
+                                        info@devstudio.com
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="m-socials">
+                        <ul class="m-socials__list">
+                            <li class="m-socials__item">
+                                <a href="#" class="m-socials__link">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="m-socials__item">
+                                <a href="#" class="m-socials__link">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="m-socials__item">
+                                <a href="#" class="m-socials__link">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="m-socials__item">
+                                <a href="#" class="m-socials__link">
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -399,6 +463,101 @@
             </div>
         </div>
     </footer>
+
+      <!-- Модальное окно -->
+<div data-modal class="backdrop is-hidden">
+    <div class="modal">
+        <button 
+        data-modal-close 
+        type="button" 
+        class="button-close">
+            <svg class="button-close__logo" width="18px" height="18px">
+                <use href="./images/icons.svg#modal-close-button"></use>
+            </svg>
+        </button>
+        <form class="form-block" novalidate>
+            <p class="form-block__title">Оставьте свои данные, мы вам перезвоним</p>
+            <div class="form-list">
+                <div class="form">
+                <label class="form__label">
+                    <span class="form__title">Имя</span>
+                    <span class="form__wrapper">
+                        <input 
+                        class="form__input" 
+                        type="text" 
+                        name="name" 
+                        autocomplete="off"
+                        style="outline-style: none">
+                        <svg class="form__logo" width="18px" height="18px">
+                            <use href="./images/icons.svg#form-person-black"></use>
+                        </svg>
+                    </span>
+                </label>
+            </div>
+            <div class="form">
+                <label class="form__label">
+                    <span class="form__title">Телефон</span>
+                    <span class="form__wrapper">
+                        <input 
+                        class="form__input" 
+                        type="tel" 
+                        name="tel" 
+                        autocomplete="off" 
+                        style="outline-style: none">
+                        <svg class="form__logo" width="18px" height="18px">
+                            <use href="./images/icons.svg#form-phone-black"></use>
+                        </svg>
+                    </span>
+                </label>
+            </div>
+            <div class="form">
+                <label class="form__label">
+                    <span class="form__title">Почта</span>
+                    <span class="form__wrapper">
+                        <input 
+                        class="form__input" 
+                        type="email" 
+                        name="email" 
+                        autocomplete="off"
+                        style="outline-style: none">
+                        <svg class="form__logo" width="18px" height="18px">
+                            <use href="./images/icons.svg#form-email-black"></use>
+                        </svg>
+                    </span>
+                </label>
+            </div>
+            <div class="form">
+                <label class="form__label">
+                    <span class="form__title">Комментарий</span>
+                    <span class="form__wrapper">
+                        <textarea 
+                        class="form__input form__input--comment" 
+                        rows="6" 
+                        name="comment" 
+                        style="outline-style: none"
+                        placeholder="Введите текст"></textarea>
+                    </span>
+                </label>
+            </div>
+            <div class="form-block__agreement">
+                <label>
+                    <span class="agreement-wrapper">
+                        <input type="checkbox" name="agreement" class="checkbox">
+                        <svg class="checkbox__icon">
+                            <use href="./images/icons.svg#checkbox-checked"></use>
+                        </svg>
+                        <span class="agreement">Соглашаюсь с рассылкой и принимаю</span>
+                        <a href="#" class="agreement__link">Условия договора</a>
+                    </span>
+                </label>
+            </div>
+            </div>
+            <button class="btn-submit" type="submit">
+                <span class="btn-submit__text">Отправить</span>
+            </button>
+        </form>
+    </div>
+</div>
     
     <script src="./js/modal.js">
     </script>
