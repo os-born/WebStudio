@@ -1,0 +1,56 @@
+// Стили секции партнеров
+
+.partners {
+  @extend %section;
+
+  .partners__conteiner {
+    @extend %conteiner;
+  }
+
+  .partners__title {
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+  }
+
+  .partners__list {
+    @extend %flex-centered;
+    @extend %list-nomarked;
+  }
+}
+.partners__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.partner {
+  max-width: 170px;
+  height: 90px;
+
+  &__link {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    transition: color $animation-var, border $animation-var, fill $animation-var;
+    cursor: pointer;
+    border: 1px solid $partners-text-color;
+    border-radius: 4px;
+    color: $partners-text-color;
+    fill: $partners-text-color;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      border: 1px solid $accent-color;
+      fill: $accent-color;
+    }
+  }
+}

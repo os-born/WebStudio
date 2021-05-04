@@ -1,0 +1,47 @@
+// Стили контактов хедера
+
+.contacts__link {
+  @extend %link-nolined;
+}
+
+.contacts__list {
+  @extend %list-nomarked;
+  @extend %flex-centered;
+}
+
+.contacts {
+  margin-left: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  fill: currentColor;
+
+  &__icon {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    @extend %hovered-focused;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-text-color;
+  }
+
+  &__text {
+    display: inline-flex;
+    margin-left: 10px;
+  }
+}
+
+.contacts__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}

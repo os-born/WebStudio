@@ -13,26 +13,17 @@
 // Стили кнопки подписаться в футере
 
 .button__subscribe {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-flex;
   @extend %button;
+  margin-left: 10px;
   justify-content: center;
   align-items: center;
-
-  @media screen and (min-width: $desktop-min) {
-    margin-left: 12px;
-    flex-wrap: nowrap;
-  }
 }
 
 .button__icon {
-  display: inline-block;
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  margin-top: auto;
-  margin-bottom: auto;
   fill: $primary-white-color;
 }
 
@@ -42,7 +33,7 @@
   transition: background-color $animation-var, color $animation-var;
   padding: 6px 22px;
   text-align: center;
-  font-family: inherit;
+  font: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -65,8 +56,7 @@
 
 .portfolio__button-list {
   justify-content: center;
-  margin-bottom: 40px;
-  // margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .portfolio__button-item {
@@ -74,10 +64,9 @@
   &:last-child {
     margin-right: 0;
   }
-  margin-bottom: 15px;
 }
 
-// Стили кнопки Close модального окна
+// Стили кнопки Close и SUbmit модального окна
 
 .button-close {
   position: absolute;
@@ -107,8 +96,6 @@
   }
 }
 
-// Стили кнопки Submit модального окна
-
 .btn-submit {
   display: block;
   width: 200px;
@@ -130,55 +117,5 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
     color: $primary-white-color;
-  }
-}
-
-// Стили кнопки открытия модального окна навигации для Mobile
-
-.m-button {
-  width: 40px;
-  height: 40px;
-  margin: 0;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  color: $title-text-color;
-  background-color: $primary-white-color;
-
-  &__icon {
-    &:hover,
-    &:focus {
-      transition: fill $animation-var;
-      fill: $accent-color;
-    }
-  }
-}
-
-// Стили кнопки закрытия модального окна навигации для Mobile
-
-.m-button-close {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 10px;
-  top: 10px;
-  padding: auto;
-  margin: 0;
-  transition: color $animation-var;
-  cursor: pointer;
-  border: none;
-  background-color: $primary-white-color;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    fill: currentColor;
-  }
-
-  &__logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }

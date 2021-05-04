@@ -1,34 +1,15 @@
 // Плейсхолдеры
 
 %section {
-  width: 480px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: $desktop-min) {
-    width: 1600px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 %conteiner {
-  width: 480px;
+  width: 1200px;
   padding: 0 15px 0 15px;
   margin-right: auto;
   margin-left: auto;
-
-  @media screen and (min-width: $tablet-min) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: $desktop-min) {
-    width: 1200px;
-  }
 }
 
 %flex-centered {

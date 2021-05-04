@@ -7,9 +7,6 @@
 
 .footer-conteiner {
   @extend %conteiner;
-  text-align: center;
-  // display: flex;
-  // align-items: top;
 }
 
 .address {
@@ -47,10 +44,6 @@
 }
 
 .footer-form {
-  // margin-left: 93px;
-  // align-self: flex-start;
-  // padding-top: 12px;
-
   &__title {
     margin-bottom: 20px;
     font-weight: 700;
@@ -74,8 +67,69 @@
     color: $primary-white-color;
     background-color: $hero-background-color;
   }
+}
 
-  &__wrapper {
-    // @extend %flex-centered;
+@media screen and (max-width: $tablet-max) {
+  .footer-conteiner {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .footer-block--positioned {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .address-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .address__list {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $desktop-min) {
+  .footer-conteiner {
+    display: flex;
+    align-items: top;
+  }
+
+  .footer-block--positioned {
+    display: flex;
+    justify-content: center;
+  }
+
+  .address-wrapper {
+    margin-bottom: 0;
+  }
+
+  .footer-form {
+    margin-left: 93px;
+    align-self: flex-start;
+    margin-top: 5px;
+
+    &__wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &__input {
+      width: 358px;
+      margin-bottom: 0;
+    }
   }
 }

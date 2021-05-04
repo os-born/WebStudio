@@ -6,7 +6,6 @@
 
 .icon__wrapper {
   @extend %flex-centered;
-  min-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-color: $team-background-color;
@@ -18,18 +17,8 @@
   @extend %section;
 
   &__list {
-    // @extend %flex-centered;
     @extend %list-nomarked;
-    // margin-bottom: 94px;
-  }
-
-  &__item {
-    margin-bottom: 30px;
-    // max-width: 270px;
-    // margin-right: 30px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+    flex-wrap: wrap;
   }
 
   &__title {
@@ -49,5 +38,56 @@
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (max-width: $tablet-max) {
+  &__item {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
+  .features {
+    &__list {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &__item {
+      width: calc(#{50%-2.1%});
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      &:nth-child(n + 5) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-min) {
+  .features {
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 94px;
+    }
+
+    &__item {
+      max-width: 270px;
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }

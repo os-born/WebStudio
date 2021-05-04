@@ -5,8 +5,6 @@
 }
 
 .header_conteiner {
-  position: relative;
   @extend %conteiner;
   @extend %flex-centered;
-  justify-content: space-between;
 }

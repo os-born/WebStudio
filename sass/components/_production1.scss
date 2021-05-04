@@ -3,13 +3,9 @@
 .production {
   display: block;
 
-  @media screen and (max-width: $desktop-max) {
-    display: none;
-  }
-
   &__title {
-    margin-bottom: 50px;
     text-align: center;
+    margin-bottom: 50px;
     font-size: 36px;
     color: $title-text-color;
   }

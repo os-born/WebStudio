@@ -6,11 +6,9 @@
 
 .contacts__list {
   @extend %list-nomarked;
-  // @extend %flex-centered;
 }
 
 .contacts {
-  margin-left: auto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -43,5 +41,54 @@
   margin-right: 30px;
   &:last-child {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
+  .contacts {
+    font-size: 12px;
+
+    &__item {
+      margin-right: 0;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__link {
+      justify-content: flex-start;
+    }
+
+    &__icon--mail {
+      width: 14px;
+      height: 10px;
+    }
+
+    &__icon--phone {
+      width: 10px;
+      height: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-min) {
+  .contacts {
+    margin-left: auto;
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__icon--mail {
+      width: 16px;
+      height: 12px;
+    }
+
+    &__icon--phone {
+      width: 10px;
+      height: 16px;
+    }
   }
 }

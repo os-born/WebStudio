@@ -3,13 +3,13 @@
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 26px;
+  line-height: 1.24;
   letter-spacing: 0.03em;
 
   &__link {
     display: inline-flex;
-    padding: 16px 0;
+    padding: 24px 0;
     @extend %link-nolined;
   }
 
@@ -21,6 +21,10 @@
     color: $title-text-color;
   }
 
+  &--headered {
+    margin-right: 93px;
+  }
+
   // Футер-лого
 
   &--white-part {
@@ -30,20 +34,5 @@
   &--footered {
     padding-top: 0;
     padding-bottom: 20px;
-  }
-}
-
-@media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
-  .logo--headered {
-    margin-right: 88px;
-  }
-}
-
-@media screen and (min-width: $desktop-min) {
-  .logo {
-    font-size: 26px;
-    &--headered {
-      margin-right: 92px;
-    }
   }
 }

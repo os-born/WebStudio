@@ -3,7 +3,7 @@
 .hero {
   @extend %flex-centered;
   @extend %section;
-  max-width: 100%;
+  width: 100%;
   padding: 118px 60px;
   text-align: center;
   border-right-color: #c4c4c4;
@@ -15,12 +15,30 @@
     url(../images/m.hero-bg-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-.hero__conteiner {
+  @media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
+    padding: 118px 204px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/t.hero-bg-image.jpg);
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    padding: 200px 452px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-image.jpg);
+  }
 }
 
 .hero__title {
+  width: 360px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
@@ -29,4 +47,10 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $primary-white-color;
+
+  @media screen and (min-width: $desktop-min) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

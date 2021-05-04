@@ -3,16 +3,9 @@
 .nav {
   @extend %flex-centered;
 
-  @media screen and (max-width: $mobile-max) {
-    justify-content: space-between;
-  }
-
   &__list {
     @extend %list-nomarked;
     @extend %flex-centered;
-    @media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
-      margin-right: 84px;
-    }
   }
 
   &__item {
@@ -52,22 +45,4 @@
     border-radius: 2px;
     background-color: $accent-color;
   }
-}
-
-@media screen and (max-width: $tablet-max) {
-  .nav {
-    display: none;
-  }
-  .contacts {
-    display: none;
-  }
-}
-
-@media screen and (min-width: $tablet-min) {
-  .m-nav-menu {
-    display: none;
-  }
-}
-
-@media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
 }
