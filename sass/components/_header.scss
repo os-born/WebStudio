@@ -1,11 +1,11 @@
 // Стили Хедера
 
 .page-header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
 .header_conteiner {
-  position: relative;
   @extend %conteiner;
   @extend %flex-centered;
   justify-content: space-between;

@@ -1,7 +1,7 @@
 // Стили Футера
 
 .page-footer {
-  padding: 60px 0;
+  @extend %section;
   background-color: #2f303a;
 }
 
@@ -128,7 +128,7 @@
     }
 
     &__input {
-      width: 358px;
+      max-width: 358px;
       margin-bottom: 0;
     }
   }

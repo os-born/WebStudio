@@ -3,7 +3,7 @@
 .hero {
   @extend %flex-centered;
   @extend %section;
-  width: 100%;
+  max-width: 100%;
   padding: 118px 60px;
   text-align: center;
   border-right-color: #c4c4c4;
