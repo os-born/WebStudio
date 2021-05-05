@@ -7,8 +7,10 @@
 .card {
   position: relative;
   display: block;
+  width: 450px;
+  height: 294px;
   overflow: hidden;
-  justify-content: stretch;
+  justify-content: center;
 
   &:hover {
     &::before {
@@ -38,7 +40,7 @@
 .card--hover-overlay {
   position: absolute;
   display: block;
-  width: 370px;
+  width: fit-content;
   height: 294px;
   left: 0;
   bottom: 0;
@@ -71,9 +73,32 @@
 
 .card__border {
   padding: 20px 24px;
-  width: 100%;
+  width: inherit;
   text-align: left;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+@media screen and (max-width: $tablet-max) {
+}
+
+@media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
+  .card {
+    width: 354px;
+  }
+  .card__border {
+    padding: 20px 24px;
+    width: inherit;
+    text-align: left;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+}
+
+@media screen and (min-width: $desktop-min) {
+  .card {
+    width: 370px;
+  }
 }
