@@ -1,13 +1,13 @@
 // Стили карточек
 
-.card-picture {
+.card__picture {
   display: block;
 }
 
 .card {
   position: relative;
   display: block;
-  width: calc(100%-30px);
+  height: 294px;
   overflow: hidden;
   justify-content: center;
 
@@ -40,7 +40,7 @@
   position: absolute;
   display: block;
   width: fit-content;
-  height: 294px;
+  height: 100%;
   left: 0;
   bottom: 0;
   transform: translateY(calc(100%));
@@ -72,7 +72,6 @@
 
 .card__border {
   padding: 20px 24px;
-  width: inherit;
   text-align: left;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -83,10 +82,24 @@
 }
 
 @media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
+  .card {
+    width: 354px;
+  }
+  .card__picture {
+    width: 100%;
+  }
+
   .card__border {
     padding: 20px 24px;
   }
 }
 
 @media screen and (min-width: $desktop-min) {
+  .card {
+    width: 370px;
+  }
+
+  .card__picture {
+    width: 100%;
+  }
 }

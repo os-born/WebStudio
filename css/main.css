@@ -1127,6 +1127,8 @@ img {
 }
 
 .portfolio__card-item {
+  width: calc(100%-30px);
+  height: 404px;
   margin-bottom: 30px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1149,33 +1151,13 @@ img {
         -ms-flex-pack: start;
             justify-content: start;
   }
-  .portfolio__card-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .portfolio__card-item {
     width: 354px;
-    height: 440px;
     margin-right: 30px;
     margin-bottom: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
   .portfolio__card-item:nth-child(even) {
     margin-right: 0;
@@ -1184,15 +1166,11 @@ img {
     margin-bottom: 0;
     margin-right: 0;
   }
-  .portfolio__card-link {
-    height: 100%;
-  }
 }
 
 @media screen and (min-width: 1600px) {
   .portfolio__card-item {
     width: 370px;
-    height: 404px;
     margin-left: 30px;
     margin-bottom: 30px;
   }
@@ -1204,14 +1182,14 @@ img {
   }
 }
 
-.card-picture {
+.card__picture {
   display: block;
 }
 
 .card {
   position: relative;
   display: block;
-  width: calc(100%-30px);
+  height: 294px;
   overflow: hidden;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1251,7 +1229,7 @@ img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 294px;
+  height: 100%;
   left: 0;
   bottom: 0;
   -webkit-transform: translateY(calc(100%));
@@ -1287,7 +1265,6 @@ img {
 
 .card__border {
   padding: 20px 24px;
-  width: inherit;
   text-align: left;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -1295,8 +1272,23 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1599px) {
+  .card {
+    width: 354px;
+  }
+  .card__picture {
+    width: 100%;
+  }
   .card__border {
     padding: 20px 24px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .card {
+    width: 370px;
+  }
+  .card__picture {
+    width: 100%;
   }
 }
 
