@@ -63,10 +63,6 @@
   }
 }
 
-.portfolio__button-list {
-  margin-bottom: 40px;
-}
-
 @media screen and (max-width: $tablet-max) {
   .portfolio__button-item {
     margin-right: 8px;
@@ -83,6 +79,9 @@
     &:nth-child(n + 4) {
       margin-bottom: 0;
     }
+  }
+  .portfolio__button-list {
+    margin-bottom: 40px;
   }
 }
 

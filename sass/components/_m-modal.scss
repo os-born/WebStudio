@@ -93,7 +93,6 @@
 
   &__link {
     display: inline-block;
-    // @extend %hovered-focused;
     @extend %link-nolined;
     cursor: pointer;
     color: $primary-text-color;

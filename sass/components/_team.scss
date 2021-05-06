@@ -17,7 +17,6 @@
   }
 
   &__list {
-    // @extend %flex-centered;
     @extend %list-nomarked;
   }
 }
@@ -32,7 +31,6 @@
   margin-bottom: 30px;
 
   &:last-child {
-    // margin-right: 0;
     margin-bottom: 0;
   }
 
@@ -66,10 +64,7 @@
 @media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
   .team {
     &__list {
-      display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
     }
   }
 
@@ -91,14 +86,18 @@
   }
 }
 
-@media screen and (min-width: $desktop-min) {
+@media screen and (min-width: $tablet-min) {
   .team {
     &__list {
       display: flex;
       justify-content: center;
       align-items: flex-start;
     }
+  }
+}
 
+@media screen and (min-width: $desktop-min) {
+  .team {
     &__title {
       text-align: center;
       margin-bottom: 50px;

@@ -75,6 +75,10 @@
 }
 
 @media screen and (min-width: $desktop-min) {
+  .portfolio__card-list {
+    flex-wrap: wrap;
+  }
+
   .portfolio__card-item {
     width: 370px;
     height: 404px;

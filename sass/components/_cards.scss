@@ -87,14 +87,6 @@
   .card {
     width: 354px;
   }
-  .card__border {
-    padding: 20px 24px;
-    width: inherit;
-    text-align: left;
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-  }
 }
 
 @media screen and (min-width: $desktop-min) {
