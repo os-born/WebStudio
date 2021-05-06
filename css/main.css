@@ -1211,8 +1211,7 @@ img {
 .card {
   position: relative;
   display: block;
-  width: 450px;
-  height: 294px;
+  width: calc(100%-30px);
   overflow: hidden;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1296,17 +1295,8 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1599px) {
-  .card {
-    width: 354px;
-  }
   .card__border {
     padding: 20px 24px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .card {
-    width: 370px;
   }
 }
 

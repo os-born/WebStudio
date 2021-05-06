@@ -7,8 +7,7 @@
 .card {
   position: relative;
   display: block;
-  width: 450px;
-  height: 294px;
+  width: calc(100%-30px);
   overflow: hidden;
   justify-content: center;
 
@@ -84,17 +83,10 @@
 }
 
 @media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
-  .card {
-    width: 354px;
-  }
-
   .card__border {
     padding: 20px 24px;
   }
 }
 
 @media screen and (min-width: $desktop-min) {
-  .card {
-    width: 370px;
-  }
 }
