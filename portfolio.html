@@ -158,8 +158,12 @@
                     <li class="portfolio__card-item">
                         <a href="#" class="portfolio__card-link">
                             <div class="card">
-                                <img src="./images/technocrack.jpg" class="card__picture" alt="веб-сайт на экране макбука"
-                                    width="450" height="294">
+                                <picture>
+                                    <source srcset="./images/technocrack450@1x.jpg 1x, ./images/technocrack900@2x.jpg 2x, ./images/technocrack350@1x.jpg 1x, ./images/technocrack700@2x.jpg 2x, ./images/technocrack370@1x.jpg 1x, ./images/technocrack740@2x.jpg 2x" media="" sizes="450px" type=".jpg" />
+                                    <img src="./images/technocrack450@1x.jpg" 
+                                    class="card__picture" 
+                                    alt="веб-сайт на экране макбука">
+                                </picture>
                                 <div class="card--hover-overlay">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.

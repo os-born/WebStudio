@@ -87,6 +87,10 @@
   .card {
     width: 354px;
   }
+
+  .card__border {
+    padding: 20px 24px;
+  }
 }
 
 @media screen and (min-width: $desktop-min) {
