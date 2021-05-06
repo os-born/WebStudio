@@ -1182,10 +1182,6 @@ img {
   }
 }
 
-.card__picture {
-  display: block;
-}
-
 .card {
   position: relative;
   display: block;
@@ -1252,7 +1248,7 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -1274,12 +1270,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .card {
     width: 354px;
-  }
-  .card__picture {
-    width: 100%;
-  }
-  .card__border {
-    padding: 20px 24px;
   }
 }
 
