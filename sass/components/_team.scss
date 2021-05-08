@@ -22,7 +22,7 @@
 }
 
 .team-member {
-  width: 100%;
+  width: 450px;
   background-color: $primary-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -30,13 +30,19 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
+  @media screen and(min-width: 320px) and (max-width: $mobile-max) {
+    width: 100%;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 
   &__img {
-    max-width: 100%;
+    width: 450px;
+
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &__name {
@@ -51,7 +57,7 @@
   }
 
   &__position {
-    padding-bottom: 14px;
+    padding-bottom: 16px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

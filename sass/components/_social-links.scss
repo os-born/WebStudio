@@ -3,7 +3,7 @@
 .social-list {
   @extend %flex-centered;
   @extend %list-nomarked;
-  padding: 0 32px 30px;
+  padding: 0 32px 24px;
 
   &__item {
     margin-right: 10px;

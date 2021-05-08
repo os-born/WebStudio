@@ -1,7 +1,6 @@
 // Плейсхолдеры
 
 %section {
-  width: 100%;
   min-width: 320px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -20,11 +19,14 @@
 }
 
 %conteiner {
-  width: 100%;
-  min-width: 320px;
   padding: 0 15px 0 15px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (min-width: $mobile-min) {
+    width: 480px;
+    margin: 0 auto;
+  }
 
   @media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
     width: 768px;
