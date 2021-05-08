@@ -2,7 +2,7 @@
 
 %section {
   width: 100%;
-  min-width: 480px;
+  min-width: 320px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-right: auto;
@@ -20,7 +20,8 @@
 }
 
 %conteiner {
-  width: 480px;
+  width: 100%;
+  min-width: 320px;
   padding: 0 15px 0 15px;
   margin-right: auto;
   margin-left: auto;
