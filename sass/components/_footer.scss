@@ -109,7 +109,7 @@
 @media screen and (min-width: $desktop-min) {
   .footer-conteiner {
     display: flex;
-    align-items: top;
+    align-items: flex-start;
   }
 
   .footer-block--positioned {

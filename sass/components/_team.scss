@@ -23,6 +23,7 @@
 
 .team-member {
   width: 450px;
+  height: 622px;
   background-color: $primary-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -39,8 +40,6 @@
   }
 
   &__img {
-    width: 450px;
-
     margin-right: auto;
     margin-left: auto;
   }
@@ -77,6 +76,7 @@
 
   .team-member {
     width: 354px;
+    height: 536px;
     margin-right: 30px;
     margin-bottom: 30px;
 
@@ -114,15 +114,12 @@
 
   .team-member {
     width: 270px;
+    height: 428px;
     margin-right: 30px;
     margin-bottom: 0;
 
     &:last-child {
       margin-right: 0;
-    }
-
-    &__img {
-      width: 270px;
     }
   }
 }
