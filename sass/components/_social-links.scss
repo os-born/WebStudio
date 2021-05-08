@@ -39,7 +39,7 @@
     justify-content: center;
     border-radius: 50%;
     cursor: pointer;
-    color: #afb1b8;
+    color: $primary-white-color;
     background-color: rgba(255, 255, 255, 0.1);
     fill: currentColor;
     @extend %hovered-focused-bg;
@@ -83,7 +83,7 @@
 
     &--footered {
       margin-left: 70px;
-      margin-top: 12px;
+      margin-top: 15px;
     }
   }
 }

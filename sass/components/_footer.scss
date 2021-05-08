@@ -1,7 +1,8 @@
 // Стили Футера
 
 .page-footer {
-  @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
@@ -109,7 +110,6 @@
 @media screen and (min-width: $desktop-min) {
   .footer-conteiner {
     display: flex;
-    align-items: flex-start;
   }
 
   .footer-block--positioned {
@@ -124,7 +124,7 @@
   .footer-form {
     margin-left: 93px;
     align-self: flex-start;
-    margin-top: 5px;
+    margin-top: 15px;
 
     &__wrapper {
       display: flex;

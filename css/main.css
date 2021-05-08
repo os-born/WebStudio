@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
-.hero, .features, .team, .partners, .portfolio, .page-footer {
+.hero, .features, .team, .partners, .portfolio {
   min-width: 320px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -8,14 +8,14 @@
 }
 
 @media screen and (max-width: 1199px) {
-  .hero, .features, .team, .partners, .portfolio, .page-footer {
+  .hero, .features, .team, .partners, .portfolio {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .hero, .features, .team, .partners, .portfolio, .page-footer {
+  .hero, .features, .team, .partners, .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -216,8 +216,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -440,7 +440,6 @@ img {
 }
 
 .features__title {
-  text-align: center;
   margin-bottom: 10px;
   font-style: normal;
   font-weight: bold;
@@ -729,7 +728,7 @@ img {
           justify-content: center;
   border-radius: 50%;
   cursor: pointer;
-  color: #afb1b8;
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
   fill: currentColor;
 }
@@ -779,7 +778,7 @@ img {
   }
   .social-links--footered {
     margin-left: 70px;
-    margin-top: 12px;
+    margin-top: 15px;
   }
 }
 
@@ -1297,6 +1296,8 @@ img {
 }
 
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
@@ -1414,9 +1415,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .footer-block--positioned {
     display: -webkit-box;
@@ -1433,7 +1431,7 @@ img {
     margin-left: 93px;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin-top: 5px;
+    margin-top: 15px;
   }
   .footer-form__wrapper {
     display: -webkit-box;
