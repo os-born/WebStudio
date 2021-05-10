@@ -91,6 +91,7 @@
 // Стили социальных сетей модального окга навигации для Mobile
 
 .m-socials {
+  width: 100%;
   &__list {
     @extend %flex-centered;
     @extend %list-nomarked;
