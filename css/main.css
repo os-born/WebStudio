@@ -625,6 +625,13 @@ img {
   color: #757575;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .team-member {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
     -ms-flex-wrap: wrap;
@@ -780,6 +787,10 @@ img {
     margin-left: 70px;
     margin-top: 15px;
   }
+}
+
+.m-socials {
+  width: 100%;
 }
 
 .m-socials__list {
@@ -973,19 +984,58 @@ img {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 767px) {
+.portfolio__button-item {
+  margin-bottom: 15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 8px;
+}
+
+.portfolio__button-item:last-child {
+  margin-right: 0;
+}
+
+.portfolio__button-item:nth-child(n + 4) {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .portfolio__button-item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-right: 8px;
-    margin-bottom: 15px;
   }
-  .portfolio__button-item:nth-last-child(2n - 3) {
+  .portfolio__button-item:last-child {
     margin-right: 0;
   }
-  .portfolio__button-item:first-child {
+  .portfolio__button-item:nth-child(n + 4) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) and (max-width: 767px) {
+  .portfolio__button-item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-right: 8px;
   }
+  .portfolio__button-item:last-child {
+    margin-right: 0;
+  }
   .portfolio__button-item:nth-child(n + 4) {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
   .portfolio__button-list {
     margin-bottom: 40px;
@@ -997,7 +1047,7 @@ img {
     margin-bottom: 30px;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1158,11 +1208,17 @@ img {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .portfolio__card-item {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .portfolio__button-list {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1278,6 +1334,19 @@ img {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .card {
+    height: auto;
+  }
+  .card .card__item {
+    width: 100%;
+    height: 100%;
+  }
+  .card .card__picture {
+    min-width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1479,6 +1548,8 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
+  max-width: 100%;
+  max-height: 100%;
   width: 450px;
   height: 609px;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1710,6 +1781,7 @@ img {
 
 .m-nav {
   width: 480px;
+  width: 100%;
   height: 100%;
   padding: 48px 83px 48px 40px;
   display: -webkit-box;

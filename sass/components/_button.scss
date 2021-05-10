@@ -61,23 +61,47 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
-}
 
-@media screen and (max-width: $tablet-max) {
-  .portfolio__button-item {
-    margin-right: 8px;
+  &-item {
     margin-bottom: 15px;
-
-    &:nth-last-child(2n - 3) {
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 8px;
+    &:last-child {
       margin-right: 0;
     }
-
-    &:first-child {
-      margin-right: 8px;
-    }
-
     &:nth-child(n + 4) {
-      margin-bottom: 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: $mobile-max) {
+  .portfolio {
+    &__button-item {
+      align-items: flex-start;
+      justify-content: center;
+      margin-right: 8px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:nth-child(n + 4) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-min) and (max-width: $tablet-max) {
+  .portfolio__button-item {
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:nth-child(n + 4) {
+      margin-bottom: 15px;
     }
   }
   .portfolio__button-list {
@@ -89,7 +113,7 @@
   .portfolio {
     &__button-list {
       margin-bottom: 30px;
-      align-items: start;
+      align-items: flex-start;
       justify-content: center;
     }
 

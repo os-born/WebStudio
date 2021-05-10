@@ -40,9 +40,15 @@
   @extend %link-nolined;
 }
 
+@media screen and (min-width: 320px) and (max-width: $mobile-max) {
+  .portfolio__card-item {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: $tablet-max) {
   .portfolio__button-list {
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 
